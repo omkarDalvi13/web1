@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 3px solid;
+    padding: 20px 30px;
+}
+
+nav .nav1{
+   font-size: 30px;
+   font-weight: 900;
+}
+nav .nav2{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+}
+nav .nav2 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
+}
+.page{
+    height: 80vh;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+.page .page1{
+    width: 50%;
+}
+.page .page1 h1{
+    font-size: 80px;
+}
+p{
+    width: 70%;
+}
+img{
+    width: 700px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-top: 3px solid black;
+    margin-top: 60px;
+padding: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav1">Welcome</div>
+    <div class="nav2">
+      <a href="">Home</a>
+      <a href="">Contact</a>
+      <a href="">Socials</a>
+      <a href="">About</a>
+    </div>
+  </nav>
+
+  <div class="page">
+    <div class="page1">
+      <h1>Welcome to</h1>
+      <h1>Our Website..</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at. 1Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores mollitia tempora laboriosam, dolore pariatur temporibus nam excepturi? Nisi, reiciendis nostrum.</p>
+    </div>
+    <div class="page2">
+      <img src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg" alt="">
+    </div>
+  </div>
+  <footer>
+    <a href="">Home</a>
+      <a href="">Contact</a>
+      <a href="">Socials</a>
+      <a href="">About</a>
+      <br>
+      <h4>Copyright reserved 2025</h4>
+  </footer>
+</body>
+</html>
+
+<!-- open cmd in file
+npm init
+create index.js
+cmd-npm install express --save
+create folder public-index.html
+const express=require('express');
+const app=express();
+
+app.use(express.static('public'))
+app.listen(4000,()=>{
+    console.log("started")
+})
+run 
+node index.js -->
